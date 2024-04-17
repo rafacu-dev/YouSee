@@ -76,9 +76,6 @@ function App() {
                 <h1 className="counter text-9xl font-black text-white" data-count={subscribers}></h1>
 
                 <div className='flex items-center'>
-                    
-                    
-
                     {
                     !bgImage ? 
                     <div className="w-16 h-16 p-2.5 rounded-full ring-2 ring-red-300 dark:ring-red-500 z-30 bg-zinc-800 flex items-center">
@@ -90,7 +87,7 @@ function App() {
                         alt="Bordered avatar"
                     />
                     }
-                    <input className="text-xl md:text-5xl font-serif italic text-white pl-10 -ml-6 w-72 md:w-96 rounded-r-full
+                    <input className="text-3xl py-2 md:py-0 md:text-5xl font-serif italic text-white pl-10 -ml-6 w-72 md:w-96 rounded-r-full
                     box-border outline-none shadow-medium rounded-large transition-transform-background motion-reduce:transition-none data-[pressed=true]:scale-[0.97] tap-highlight-transparent border-transparent 
                     bg-white/5 dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8] " onChange={onChangeNameChannel} value={`@${nameChannel}`}/>
                     <button onClick={onChangeChannelId} className="-ml-[3.25rem] rounded-full outline-none cursor-pointer border-transparent hover:bg-white/5 backdrop-blur-lg w-12 h-12 p-3" type="button" role="button">
@@ -103,7 +100,7 @@ function App() {
                     </button>
                 </div>
                 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl z-30">
+                <div className="grid grid-cols-2 gap-4 max-w-2xl z-30">
                     <button className="flex flex-col relative rounded-xl overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large cursor-pointer transition-transform-background motion-reduce:transition-none data-[pressed=true]:scale-[0.97] tap-highlight-transparent border-transparent bg-white/5 dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8] px-6 py-3" type="button" role="button">
                         <div className="flex flex-col p-3 z-10 w-full justify-start items-center gap-2 pb-0">
                             <svg xmlns="http://www.w3.org/2000/svg"className="w-16 text-red-500" viewBox="0 0 256 256"><path fill="currentColor" d="m163.33 107l-48-32a6 6 0 0 0-9.33 5v64a6 6 0 0 0 9.33 5l48-32a6 6 0 0 0 0-10M118 132.79V91.21L149.18 112ZM216 42H40a14 14 0 0 0-14 14v112a14 14 0 0 0 14 14h176a14 14 0 0 0 14-14V56a14 14 0 0 0-14-14m2 126a2 2 0 0 1-2 2H40a2 2 0 0 1-2-2V56a2 2 0 0 1 2-2h176a2 2 0 0 1 2 2Zm12 40a6 6 0 0 1-6 6H32a6 6 0 0 1 0-12h192a6 6 0 0 1 6 6"/></svg>
