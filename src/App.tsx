@@ -17,7 +17,7 @@ function App() {
         window.scrollTo(0,0);
 
         setLoading(true)
-        
+
         getChannelId(channelId) 
         .then(result => {
             
@@ -77,19 +77,14 @@ function App() {
                 <h1 className="counter text-9xl font-black text-white" data-count={subscribers}></h1>
 
                 <div className='flex items-center'>
-                    {imageError ? (
-                        <div className="w-16 h-16 p-2.5 rounded-full ring-2 ring-red-300 dark:ring-red-500 z-30 bg-zinc-800 flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="w-full h-full text-red-400" viewBox="0 0 1000 1000"><path fill="currentColor" d="M807 111v313h-64v-35q-37 39-74 39q-45 0-45-56V111h64v240q0 21 17 21t38-24V111zm-237 73v162q0 42-25 64t-68 22q-41 0-66.5-23.5T385 345V183q0-39 27.5-59.5T480 103q38 0 64 22t26 59m-65 167V180q0-10-9-16.5t-19-6.5t-18 6.5t-8 16.5v171q0 26 26 26q28 0 28-26M315 0h73l-55 165q-4 12-10 27.5t-10.5 28T305 248v176h-72V256q-2-12-29-85L147 0h73l46 169h5zm611 739q0 49-6 145q-4 50-38.5 79.5T797 995q-99 5-297 5q-199 0-297-5q-50-2-84.5-31.5T80 884q-6-96-6-145t6-145q4-50 38.5-79.5T203 483q98-5 297-5t297 5q50 2 84.5 31.5T920 594q6 96 6 145m-71 91v-19h-53q0 2 .5 13t0 15.5T800 851t-7 10t-14 3q-10 0-15.5-6t-6-12t-.5-17v-48h98v-64q0-35-19-55t-54-20q-34 0-56.5 20.5T703 717v113q0 36 19.5 57.5T778 909q77 0 77-79m-191 19V709q0-63-50-63q-25 0-46 23V559h-52v343h52v-20q22 23 49 23q47 0 47-56m-250 53h51V649h-51v192q-17 19-31 19q-13 0-13-17V649h-52v213q0 44 36 44q30 0 60-32zM258 609h61v-50H140v50h60v293h58zm544 105v28h-45v-28q0-27 23-27q22 0 22 27m-191-3v133q0 21-18 21q-14 0-25-11V696q10-10 22-10q21 0 21 25"/></svg>
-                        </div>
-                    ) : (
-                        <img
+                    
+                    <img
                         className="w-16 h-16 p-1 rounded-full ring-2 ring-red-300 dark:ring-red-500 z-30"
                         src={bgImage}
                         alt="Bordered avatar"
-                        onError={() => setImageError(true)}
                         />
-                    )}
-                    <input className="text-5xl font-serif italic text-white pl-10 -ml-6 w-96 rounded-r-full
+                        
+                    <input className="text-5xl font-serif italic text-white pl-10 -ml-6 w-72 lg:w-96 rounded-r-full
                     box-border outline-none shadow-medium rounded-large transition-transform-background motion-reduce:transition-none data-[pressed=true]:scale-[0.97] tap-highlight-transparent border-transparent 
                     bg-white/5 dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8] " onChange={onChangeNameChannel} value={`@${nameChannel}`}/>
                     <button onClick={onChangeChannelId} className="-ml-[3.25rem] rounded-full outline-none cursor-pointer border-transparent hover:bg-white/5 backdrop-blur-lg w-12 h-12 p-3" type="button" role="button">
