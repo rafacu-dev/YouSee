@@ -9,7 +9,6 @@ function App() {
   const [subscribers, setSubscriber] = useState<number>(0)
   const [videos, setVideos] = useState<number>(0)
   const [views, setViews] = useState<number>(0)
-  const [imageError, setImageError] = useState(false);
 
   const [loading, setLoading] = useState(true);
   
@@ -83,7 +82,7 @@ function App() {
                         src={bgImage}
                         alt="Bordered avatar"
                         />
-                        
+
                     <input className="text-5xl font-serif italic text-white pl-10 -ml-6 w-72 lg:w-96 rounded-r-full
                     box-border outline-none shadow-medium rounded-large transition-transform-background motion-reduce:transition-none data-[pressed=true]:scale-[0.97] tap-highlight-transparent border-transparent 
                     bg-white/5 dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8] " onChange={onChangeNameChannel} value={`@${nameChannel}`}/>
