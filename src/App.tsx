@@ -106,14 +106,14 @@ function App() {
                             <svg xmlns="http://www.w3.org/2000/svg"className="w-16 text-red-500" viewBox="0 0 256 256"><path fill="currentColor" d="m163.33 107l-48-32a6 6 0 0 0-9.33 5v64a6 6 0 0 0 9.33 5l48-32a6 6 0 0 0 0-10M118 132.79V91.21L149.18 112ZM216 42H40a14 14 0 0 0-14 14v112a14 14 0 0 0 14 14h176a14 14 0 0 0 14-14V56a14 14 0 0 0-14-14m2 126a2 2 0 0 1-2 2H40a2 2 0 0 1-2-2V56a2 2 0 0 1 2-2h176a2 2 0 0 1 2 2Zm12 40a6 6 0 0 1-6 6H32a6 6 0 0 1 0-12h192a6 6 0 0 1 6 6"/></svg>
                             <p className="text-normal font-black text-red-500">VIDEOS</p>
                         </div>
-                        <h1 className="text-5xl font-black text-white text-center w-full py-3">{videos}</h1>
+                        <h1 className="text-3xl md:text-5xl font-black text-white text-center w-full py-3">{videos}</h1>
                     </button>
                     <button className="flex flex-col relative rounded-xl overflow-hidden height-auto text-foreground box-border outline-none data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 shadow-medium rounded-large cursor-pointer transition-transform-background motion-reduce:transition-none data-[pressed=true]:scale-[0.97] tap-highlight-transparent border-transparent bg-white/5 dark:bg-default-400/10 backdrop-blur-lg backdrop-saturate-[1.8] px-6 py-3" type="button" role="button">
                         <div className="flex flex-col p-3 z-10 w-full justify-start items-center gap-2 pb-0">
                             <svg xmlns="http://www.w3.org/2000/svg" className="w-16 text-red-500" viewBox="0 0 256 256"><path fill="currentColor" d="M164.38 181.1a52 52 0 1 0-72.76 0a75.89 75.89 0 0 0-30 28.89a12 12 0 0 0 20.78 12a53 53 0 0 1 91.22 0a12 12 0 1 0 20.78-12a75.89 75.89 0 0 0-30.02-28.89M100 144a28 28 0 1 1 28 28a28 28 0 0 1-28-28m147.21 9.59a12 12 0 0 1-16.81-2.39c-8.33-11.09-19.85-19.59-29.33-21.64a12 12 0 0 1-1.82-22.91a20 20 0 1 0-24.78-28.3a12 12 0 1 1-21-11.6a44 44 0 1 1 73.28 48.35a92.18 92.18 0 0 1 22.85 21.69a12 12 0 0 1-2.39 16.8m-192.28-24c-9.48 2.05-21 10.55-29.33 21.65a12 12 0 0 1-19.19-14.45a92.37 92.37 0 0 1 22.85-21.69a44 44 0 1 1 73.28-48.35a12 12 0 1 1-21 11.6a20 20 0 1 0-24.78 28.3a12 12 0 0 1-1.82 22.91Z"/></svg>
                             <p className="text-normal font-black text-red-500">VISTAS</p>
                         </div>
-                        <h1 className="text-5xl font-black text-white text-center w-full py-3">{views}</h1>
+                        <h1 className="text-3xl md:text-5xl font-black text-white text-center w-full py-3">{views}</h1>
                     </button>
                 </div>
             </div>
