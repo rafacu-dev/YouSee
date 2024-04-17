@@ -1,30 +1,27 @@
-# React + TypeScript + Vite
+# YouSee (YouTube Real-Time Subscribers App)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a React application that consumes the YouTube Data API v3 to display the real-time subscriber count of a channel.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Fetches data from the YouTube Data API v3 to get the subscriber count of a specific channel.
+- Displays the real-time subscriber count of the channel.
 
-## Expanding the ESLint configuration
+## Used technology
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React + TypeScript + Vite
+- Tailwind CSS
 
-- Configure the top-level `parserOptions` property like this:
+## File structure
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- `src/`: Contains the source files of the application.
+   - `components/`: React components.
+   - `assets/`: Images and other static resources.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Contributions
+
+If you would like to contribute to this project, feel free to do so! You can open an issue or send a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
