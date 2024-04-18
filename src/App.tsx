@@ -52,7 +52,7 @@ function App() {
             const endValue = parseInt(element.getAttribute('data-count') || '0', 0);
             const duration = endValue/10000;
             const range = endValue;
-            let currentCount = 0;
+            let currentCount = endValue - 150 < 0? 0 : endValue-150;
             const stepTime = Math.abs(Math.floor(duration / range));
         
             const counterInterval = setInterval(() => {
@@ -69,7 +69,6 @@ function App() {
         }
     }, [subscribers]);
 
-    console.log(loading)
     return (
         <div className="min-h-screen bg-cover bg-center" style={{backgroundImage: `url(${bgImage})`}}>
             <div className="h-screen bg-black/90 flex flex-col bg-cover bg-center flex flex-cols items-center justify-center space-y-10"> 
